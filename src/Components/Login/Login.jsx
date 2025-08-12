@@ -20,7 +20,7 @@ const Login = () => {
     return (
         <div className='container'>
             <form onSubmit={handleSubmit}>
-                <h1>Acesse o sistema e marque sua consulta</h1>
+                <h1 >Acesse o sistema e marque sua consulta</h1>
                 <div>
                     <input type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)} />
                     <FaUser className='icon' />
@@ -28,7 +28,13 @@ const Login = () => {
                 <div>
                     <input type="password" placeholder='Senha' onChange={(e) => setPassword(e.target.value)} />
                     <FaLock className='icon' />
+
+                    
                 </div>
+
+                 <button type="submit">
+                        Entrar
+                    </button>
 
                 <div className='recall-forget'>
                     <label>
@@ -39,9 +45,7 @@ const Login = () => {
                 </div>
 
                 <div>
-                    <button type="submit">
-                        Entrar
-                    </button>
+                   
 
                     <div className='signup-link'>
                         <p>Não tem uma conta ? <a href="#">Crie sua conta aqui</a></p>
